@@ -39,3 +39,10 @@ This sample create Ubuntu 22.04
     - Confirm Tab
     ![Confirm Tab](pics/pic8.png)
 
+## Add cloud init to VM
+
+    - Select template > Hardware
+    ![](pics/pic.png)
+
+    - Add > CloudInit Drive
+    ![](pics/pic8.png)
