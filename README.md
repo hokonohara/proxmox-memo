@@ -10,15 +10,17 @@ This sample create Ubuntu 22.04
 
     - General Tab
     ![General Tab](pics/pic1.png)
+    <img src= "pics/pic1.png" alt="General Tab" style="border: 2px solid grey;">
         - VM ID = 900
         - Name = \<something\>-template
 
     - OS Tab
-    ![OS Tab](pics/pic2.png)
+    <kbd>![OS Tab](pics/pic2.png)</kbd>
         - Check = Do not use any media
     
     - System Tab
-    ![System Tab](pics/pic3.png)
+    |![System Tab](pics/pic3.png)|
+    -
         - Check = Qemu Agent
     
     - Disks Tab
