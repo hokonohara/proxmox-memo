@@ -39,10 +39,43 @@ This sample create Ubuntu 22.04
     - Confirm Tab
     ![Confirm Tab](pics/pic8.png)
 
-## Add cloud init to VM
+- Add cloud init to VM
 
     - Select template > Hardware
     ![](pics/pic2-1.png)
 
     - Add > CloudInit Drive
     ![](pics/pic2-2.png)
+
+    - Storage = local-lvm
+    ![](pics/pic2-3.png)
+
+- CloudInit setting
+
+    - Cloud-Init 
+        - user = \<username\>
+        - password = \<password\>
+        - network > DHCP
+        - SSH public key = \<copy paste\>
+        ![](pics/pic3-1.png)
+
+- Proxmox console
+
+    ```
+    # wget https://cloud-images.ubuntu.com/minimal/releases/jammy/release/ubuntu-22.04-minimal-cloudimg-amd64.img
+    ```
+    Ref: https://cloud-images.ubuntu.com/minimal/releases/jammy/release/
+
+    ```
+    # qm set 900 --serial0 socket --vga serial0
+    ```
+    900 is proxmox template VM id 
+
+    ```
+    # mv ubuntu-22.04-minimal-clouding-amd64.img ubuntu-22.04.qcow2
+    # qemu-img resize ubuntu-22.04.qcow2 32G
+    # qm importdisk 900 ubuntu-22.04.qcow2 local-lvm
+    ```
+
+- Set template
+
