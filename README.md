@@ -9,8 +9,7 @@ This sample create Ubuntu 22.04
 - Create virtual machine
 
     - General Tab
-    ![General Tab](pics/pic1.png)
-    <img src= "pics/pic1.png" alt="General Tab" style="border: 2px solid grey;">
+    <kbd>![General Tab](pics/pic1.png)</kbd>
         - VM ID = 900
         - Name = \<something\>-template
 
@@ -19,38 +18,37 @@ This sample create Ubuntu 22.04
         - Check = Do not use any media
     
     - System Tab
-    |![System Tab](pics/pic3.png)|
-    -
+    <kbd>![System Tab](pics/pic3.png)|</kbd>
         - Check = Qemu Agent
     
     - Disks Tab
-    ![Disks Tab](pics/pic4-1.png)
-    ![Disks Tab](pics/pic4-2.png)
+    <kbd>![Disks Tab](pics/pic4-1.png)</kbd>
+    <kbd>![Disks Tab](pics/pic4-2.png)</kbd>
         - Delete disk
 
     - CPU Tab
-    ![CPU Tab](pics/pic5.png)
+    <kbd>![CPU Tab](pics/pic5.png)</kbd>
 
     - Memory Tab
-    ![Memory Tab](pics/pic6.png)
+    <kbd>![Memory Tab](pics/pic6.png)</kbd>
         - Memory (MiB) = 1024
 
     - Network Tab
-    ![Network Tab](pics/pic7.png)
+    <kbd>![Network Tab](pics/pic7.png)</kbd>
 
     - Confirm Tab
-    ![Confirm Tab](pics/pic8.png)
+    <kbd>![Confirm Tab](pics/pic8.png)</kbd>
 
 - Add cloud init to VM
 
     - Select template > Hardware
-    ![](pics/pic2-1.png)
+    <kbd>![](pics/pic2-1.png)</kbd>
 
     - Add > CloudInit Drive
-    ![](pics/pic2-2.png)
+    <kbd>![](pics/pic2-2.png)</kbd>
 
     - Storage = local-lvm
-    ![](pics/pic2-3.png)
+    <kbd>![](pics/pic2-3.png)</kbd>
 
 - CloudInit setting
 
@@ -59,7 +57,7 @@ This sample create Ubuntu 22.04
         - password = \<password\>
         - network > DHCP
         - SSH public key = \<copy paste\>
-        ![](pics/pic3-1.png)
+        <kbd>![](pics/pic3-1.png)</kbd>
 
 - Proxmox console
 
@@ -80,4 +78,5 @@ This sample create Ubuntu 22.04
     ```
 
 - Set template
+
 
