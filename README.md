@@ -42,7 +42,7 @@ This sample create Ubuntu 22.04
 ## Add cloud init to VM
 
     - Select template > Hardware
-    ![](pics/pic.png)
+    ![](pics/pic2-1.png)
 
     - Add > CloudInit Drive
-    ![](pics/pic8.png)
+    ![](pics/pic2-2.png)
