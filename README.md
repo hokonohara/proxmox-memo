@@ -41,7 +41,7 @@ This sample create Ubuntu 22.04
 
 - Add cloud init to VM
 
-    - Select template > Hardware
+    - Select Template VM > Hardware
     <kbd>![](pics/pic2-1.png)</kbd>
 
     - Add > CloudInit Drive
@@ -79,4 +79,33 @@ This sample create Ubuntu 22.04
 
 - Set template
 
+    - Select template VM > Hardware > Unused Disk 0 > Edit > Check = Discard > Check = Advanced > Check = SSD emulation > Add
+    <kbd>![](pics/pic5-1.png)</kbd>
+    <kbd>![](pics/pic5-2.png)</kbd>
+    <kbd>![](pics/pic5-3.png)</kbd>
 
+    - Option > Boot Order
+    <kbd>![](pics/pic5-4.png)</kbd>
+    <kbd>![](pics/pic5-5.png)</kbd>
+
+    - Start at boot = yes
+    <kbd>![](pics/pic5-6.png)</kbd>
+
+- Convert to template
+
+    <kbd>![](pics/pic6-1.png)</kbd>
+
+- Create VM from template (test)
+
+    - Clone
+    <kbd>![](pics/pic7-1.png)</kbd>
+
+    - 
+        - VM ID = 799
+        - Mode = Full Clone
+        - Name = ubuntu-test
+    <kbd>![](pics/pic7-2.png)</kbd>
+
+    - Console
+    <kbd>![](pics/pic7-3.png)</kbd>
+    
